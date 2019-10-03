@@ -1,0 +1,6 @@
+C:\Users\Faria\Desktop\DotNetProjects\BlueBadge\Playlist\Playlist.Services\bin\Debug\Playlist.Services.dll
+C:\Users\Faria\Desktop\DotNetProjects\BlueBadge\Playlist\Playlist.Services\bin\Debug\Playlist.Services.pdb
+C:\Users\Faria\Desktop\DotNetProjects\BlueBadge\Playlist\Playlist.Services\obj\Debug\Playlist.Services.csprojAssemblyReference.cache
+C:\Users\Faria\Desktop\DotNetProjects\BlueBadge\Playlist\Playlist.Services\obj\Debug\Playlist.Services.csproj.CoreCompileInputs.cache
+C:\Users\Faria\Desktop\DotNetProjects\BlueBadge\Playlist\Playlist.Services\obj\Debug\Playlist.Services.dll
+C:\Users\Faria\Desktop\DotNetProjects\BlueBadge\Playlist\Playlist.Services\obj\Debug\Playlist.Services.pdb

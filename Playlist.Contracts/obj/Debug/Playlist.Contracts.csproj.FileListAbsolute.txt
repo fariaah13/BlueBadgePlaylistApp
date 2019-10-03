@@ -1,0 +1,6 @@
+C:\Users\Faria\Desktop\DotNetProjects\BlueBadge\Playlist\Playlist.Contracts\bin\Debug\Playlist.Contracts.dll
+C:\Users\Faria\Desktop\DotNetProjects\BlueBadge\Playlist\Playlist.Contracts\bin\Debug\Playlist.Contracts.pdb
+C:\Users\Faria\Desktop\DotNetProjects\BlueBadge\Playlist\Playlist.Contracts\obj\Debug\Playlist.Contracts.csprojAssemblyReference.cache
+C:\Users\Faria\Desktop\DotNetProjects\BlueBadge\Playlist\Playlist.Contracts\obj\Debug\Playlist.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\Faria\Desktop\DotNetProjects\BlueBadge\Playlist\Playlist.Contracts\obj\Debug\Playlist.Contracts.dll
+C:\Users\Faria\Desktop\DotNetProjects\BlueBadge\Playlist\Playlist.Contracts\obj\Debug\Playlist.Contracts.pdb

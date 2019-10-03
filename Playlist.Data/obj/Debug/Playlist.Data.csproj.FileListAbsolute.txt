@@ -1,0 +1,16 @@
+C:\Users\Faria\Desktop\DotNetProjects\BlueBadge\Playlist\Playlist.Data\bin\Debug\Playlist.Data.dll.config
+C:\Users\Faria\Desktop\DotNetProjects\BlueBadge\Playlist\Playlist.Data\bin\Debug\Playlist.Data.dll
+C:\Users\Faria\Desktop\DotNetProjects\BlueBadge\Playlist\Playlist.Data\bin\Debug\Playlist.Data.pdb
+C:\Users\Faria\Desktop\DotNetProjects\BlueBadge\Playlist\Playlist.Data\bin\Debug\EntityFramework.dll
+C:\Users\Faria\Desktop\DotNetProjects\BlueBadge\Playlist\Playlist.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Faria\Desktop\DotNetProjects\BlueBadge\Playlist\Playlist.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Faria\Desktop\DotNetProjects\BlueBadge\Playlist\Playlist.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Faria\Desktop\DotNetProjects\BlueBadge\Playlist\Playlist.Data\bin\Debug\EntityFramework.xml
+C:\Users\Faria\Desktop\DotNetProjects\BlueBadge\Playlist\Playlist.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Faria\Desktop\DotNetProjects\BlueBadge\Playlist\Playlist.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Faria\Desktop\DotNetProjects\BlueBadge\Playlist\Playlist.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Faria\Desktop\DotNetProjects\BlueBadge\Playlist\Playlist.Data\obj\Debug\Playlist.Data.csprojAssemblyReference.cache
+C:\Users\Faria\Desktop\DotNetProjects\BlueBadge\Playlist\Playlist.Data\obj\Debug\Playlist.Data.csproj.CoreCompileInputs.cache
+C:\Users\Faria\Desktop\DotNetProjects\BlueBadge\Playlist\Playlist.Data\obj\Debug\Playlist.Data.csproj.CopyComplete
+C:\Users\Faria\Desktop\DotNetProjects\BlueBadge\Playlist\Playlist.Data\obj\Debug\Playlist.Data.dll
+C:\Users\Faria\Desktop\DotNetProjects\BlueBadge\Playlist\Playlist.Data\obj\Debug\Playlist.Data.pdb
