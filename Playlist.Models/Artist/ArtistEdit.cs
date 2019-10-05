@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Playlist.Models
+namespace Playlist.Models.Artist
 {
-    public class Class1
+    public class ArtistEdit
     {
     }
 }

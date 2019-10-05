@@ -3,3 +3,4 @@ C:\Users\Faria\Desktop\DotNetProjects\BlueBadge\Playlist\Playlist.Models\bin\Deb
 C:\Users\Faria\Desktop\DotNetProjects\BlueBadge\Playlist\Playlist.Models\obj\Debug\Playlist.Models.csproj.CoreCompileInputs.cache
 C:\Users\Faria\Desktop\DotNetProjects\BlueBadge\Playlist\Playlist.Models\obj\Debug\Playlist.Models.dll
 C:\Users\Faria\Desktop\DotNetProjects\BlueBadge\Playlist\Playlist.Models\obj\Debug\Playlist.Models.pdb
+C:\Users\Faria\Desktop\DotNetProjects\BlueBadge\Playlist\Playlist.Models\obj\Debug\Playlist.Models.csprojAssemblyReference.cache

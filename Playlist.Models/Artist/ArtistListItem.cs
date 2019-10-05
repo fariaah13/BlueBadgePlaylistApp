@@ -1,21 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Playlist.Data
+namespace Playlist.Models
 {
-    public class Artist
+    public class ArtistListItem
     {
-        [Key]
         public int ArtistID { get; set; }
-        [Required]
         public string Name { get; set; }
-        [Required]
-        public bool IsBand { get; set; }
-        [Required]
         public string CountryOfOrigin { get; set; }
     }
 }

@@ -5,6 +5,7 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using Playlist.Data;
 
 namespace PlaylistApp.Data
 {
@@ -34,7 +35,7 @@ namespace PlaylistApp.Data
         public DbSet<Artist> Artists { get; set; }
         public DbSet<Song> Songs { get; set; }
         public DbSet<Album> Albums { get; set; }
-        public DbSet<Playlist> Playlists { get; set; } //id,name,ownerid
+        public DbSet<NewPlaylist> Playlists { get; set; } //id,name,ownerid
         public DbSet<SongPlaylist> PlaylistOfSongs { get; set; }//actual playlist of songs
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

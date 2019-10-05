@@ -5,17 +5,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Playlist.Data
+namespace Playlist.Models.Artist
 {
-    public class Artist
+    public class ArtistCreate
     {
-        [Key]
-        public int ArtistID { get; set; }
         [Required]
         public string Name { get; set; }
-        [Required]
         public bool IsBand { get; set; }
         [Required]
+        [Display(Name = "Country")]
         public string CountryOfOrigin { get; set; }
     }
 }

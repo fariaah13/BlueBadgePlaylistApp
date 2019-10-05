@@ -7,15 +7,11 @@ using System.Threading.Tasks;
 
 namespace Playlist.Data
 {
-    public class Artist
+    public class SongPlaylist
     {
         [Key]
+        public int SongPlaylistID { get; set; }
         public int ArtistID { get; set; }
-        [Required]
-        public string Name { get; set; }
-        [Required]
-        public bool IsBand { get; set; }
-        [Required]
-        public string CountryOfOrigin { get; set; }
+        public int SongID { get; set; }
     }
 }
