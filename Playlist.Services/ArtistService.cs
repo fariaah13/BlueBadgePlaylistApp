@@ -1,4 +1,5 @@
 ﻿using Playlist.Data;
+using Playlist.Models;
 using Playlist.Models.Artist;
 using PlaylistApp.Data;
 using System;
@@ -11,19 +12,11 @@ namespace Playlist.Services
 {
     public class ArtistService
     {
-        private readonly int _artistID;
-
-        public ArtistService(int artistID)
-        {
-            _artistID = artistID;
-        }
-
         //CreateArtist
         public bool CreateArtist(ArtistCreate model)
         {
             var artist = new Artist()
             {
-                ArtistID = _artistID,
                 Name = model.Name,
                 IsBand = model.IsBand,
                 CountryOfOrigin = model.CountryOfOrigin
@@ -36,44 +29,71 @@ namespace Playlist.Services
             }
         }
 
-        //Get ALL artist
+        //GetAllArtists
         public IEnumerable<ArtistListItem> GetAllArtists()
         {
             using (var ctx = new ApplicationDbContext())
             {
-                var query =
-                   ctx.
-                   Artists
-                   .Select(
-                       artist =>
-                            new ArtistListItem
-                            {
-                                ArtistID = artist.ArtistID,
-                                Name = artist.Name,
-                                CountryOfOrigin= artist.CountryOfOrigin
-                            });
+                var query = ctx.Artists
+                   .Select( artist =>
+                        new ArtistListItem
+                        {
+                            ArtistID = artist.ArtistID,
+                            Name = artist.Name,
+                            CountryOfOrigin= artist.CountryOfOrigin
+                        });
                 return query.ToArray();
             }
         }
-        //Get Artist --> See all existing artists
-        public IEnumerable<ArtistListItem> GetArtistsByID()
+
+        //GetArtistByID
+        public ArtistDetail GetArtistByID (int id)
         {
             using (var ctx = new ApplicationDbContext())
             {
-                var query =
+                var artist = ctx.Artists
+                    .Single(a => a.ArtistID == id);
+
+                return new ArtistDetail
+                {
+                    ArtistID = artist.ArtistID,
+                    Name = artist.Name,
+                    IsBand = artist.IsBand,
+                    CountryOfOrigin = artist.CountryOfOrigin
+                };
+            }
+        }
+        //EditArtist
+        public bool EditArtist (ArtistEdit model)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
                     ctx
                     .Artists
-                    .Where(artist => artist.ArtistID == _artistID)
-                    .Select(
-                     artist =>
-                     new ArtistListItem
-                     {
-                         ArtistID = artist.ArtistID,
-                         Name = artist.Name,
-                         CountryOfOrigin = artist.CountryOfOrigin
-                     }
-                    );
-                return query.ToArray();
+                    .Single(artist => artist.ArtistID == model.ArtistID);
+
+                entity.Name = model.Name;
+                entity.CountryOfOrigin = model.CountryOfOrigin;
+                entity.IsBand = model.IsBand;
+
+                return ctx.SaveChanges() == 1;
+            }
+        }
+        
+        //DeleteArtist
+        public bool DeleteArtist (int artistID)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                    .Artists
+                    .Single(artist => artist.ArtistID == artistID);
+
+                ctx.Artists.Remove(entity);
+
+                return ctx.SaveChanges() == 1;
             }
         }
     }

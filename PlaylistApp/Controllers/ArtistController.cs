@@ -17,7 +17,7 @@ namespace PlaylistApp.Controllers
         // GET: Artist
         public ActionResult Index()
         {
-            var service = new ArtistService(artistID); //How fix???
+            var service = new ArtistService();
             var model = service.GetAllArtists();
             return View(model);
         }
@@ -27,35 +27,95 @@ namespace PlaylistApp.Controllers
         {
             return View();
         }
+
         //POST Artist/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(ArtistCreate model)
         {
-            if (!ModelState.IsValid) return View(model);
-            var service = CreateArtistService();
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
+            var service = new ArtistService();
+
             if (service.CreateArtist(model))
             {
                 TempData["SaveResult"] = "Artist has been added";
                 return RedirectToAction("Index");
             }
+
+            ModelState.AddModelError("", "Artist was not added");
+            return View(model);
         }
         //GET Artist/Detail
-        //GET Artist/Edit
-        //POST Artist/Edit
-        //GET Artist/Delete
-        public ActionResult Delete(int id)
+        public ActionResult Details(int id)
         {
-            var svc = CreateArtistService();
+            var svc = new ArtistService();
             var model = svc.GetArtistByID(id);
-        }
-        //POST Artist/Delete
-        
 
-        private ArtistService CreateArtistService()
+            return View(model);
+        }
+        //GET Artist/Edit
+        public ActionResult Edit(int id)
         {
-            var service = new ArtistService(artistID);
-            return Service;
+            var service = new ArtistService();
+            var detail = service.GetArtistByID(id);
+            var model =
+                new ArtistEdit
+                {
+                    ArtistID = detail.ArtistID,
+                    Name = detail.Name,
+                    CountryOfOrigin = detail.CountryOfOrigin,
+                    IsBand = detail.IsBand
+                };
+            return View(model);
+        }
+        //POST Artist/Edit
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit(int id, ArtistEdit model)
+        {
+            if (!ModelState.IsValid) return View(model);
+
+            if (model.ArtistID != id)
+            {
+                ModelState.AddModelError("", "ID Mismatch");
+                return View(model);
+            }
+
+            var service = new ArtistService();
+            if (service.EditArtist(model))
+            {
+                TempData["SaveResult"] = "Artist was updated";
+                return RedirectToAction("Index");
+            }
+            ModelState.AddModelError("", "Artist could not be updated");
+            return View();
+        }
+
+        //GET Artist/Delete
+        public ActionResult Delete (int id)
+        {
+            var svc = new ArtistService();
+            var model = svc.GetArtistByID(id);
+
+            return View(model);
+
+        }
+        
+        //POST Artist/Delete
+        [HttpPost]
+        [ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        
+        public ActionResult DeleteArtist (int id)
+        {
+            var service = new ArtistService();
+            service.DeleteArtist(id);
+            TempData["SaveResult"] = "Artist was deleted";
+            return RedirectToAction("Index");
         }
     }
 }

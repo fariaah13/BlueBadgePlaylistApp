@@ -235,7 +235,12 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Artist\Index.cshtml" />
     <Content Include="Views\Artist\Create.cshtml" />
+    <Content Include="Views\Artist\Edit.cshtml" />
+    <Content Include="Views\Artist\Delete.cshtml" />
+    <Content Include="Views\Artist\Detail.cshtml" />
+    <Content Include="Views\Artist\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -255,7 +260,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Playlist.Data\Playlist.Data.csproj">
-      <Project>{420EE9E6-159F-44F8-8E8C-4B7C336931A8}</Project>
+      <Project>{420ee9e6-159f-44f8-8e8c-4b7c336931a8}</Project>
       <Name>Playlist.Data</Name>
     </ProjectReference>
     <ProjectReference Include="..\Playlist.Models\Playlist.Models.csproj">

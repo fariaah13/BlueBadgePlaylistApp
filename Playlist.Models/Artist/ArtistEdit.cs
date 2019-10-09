@@ -8,5 +8,9 @@ namespace Playlist.Models.Artist
 {
     public class ArtistEdit
     {
+        public int ArtistID { get; set; }
+        public string Name { get; set; }
+        public bool IsBand { get; set; }
+        public string CountryOfOrigin { get; set; }
     }
 }

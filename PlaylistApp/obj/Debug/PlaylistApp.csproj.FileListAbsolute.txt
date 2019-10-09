@@ -110,3 +110,4 @@ C:\Users\Faria\Desktop\DotNetProjects\BlueBadge\Playlist\PlaylistApp\bin\Playlis
 C:\Users\Faria\Desktop\DotNetProjects\BlueBadge\Playlist\PlaylistApp\bin\Playlist.Services.dll
 C:\Users\Faria\Desktop\DotNetProjects\BlueBadge\Playlist\PlaylistApp\bin\Playlist.Models.pdb
 C:\Users\Faria\Desktop\DotNetProjects\BlueBadge\Playlist\PlaylistApp\bin\Playlist.Services.pdb
+C:\Users\Faria\Desktop\DotNetProjects\BlueBadge\Playlist\PlaylistApp\bin\Playlist.Services.dll.config
