@@ -42,6 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Album\AlbumCreate.cs" />
+    <Compile Include="Album\AlbumDetail.cs" />
+    <Compile Include="Album\AlbumEdit.cs" />
+    <Compile Include="Album\AlbumListItem.cs" />
     <Compile Include="Artist\ArtistCreate.cs" />
     <Compile Include="Artist\ArtistDetail.cs" />
     <Compile Include="Artist\ArtistEdit.cs" />

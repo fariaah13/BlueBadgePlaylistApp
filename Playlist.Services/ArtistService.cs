@@ -40,6 +40,7 @@ namespace Playlist.Services
                         {
                             ArtistID = artist.ArtistID,
                             Name = artist.Name,
+                            IsBand = artist.IsBand,
                             CountryOfOrigin= artist.CountryOfOrigin
                         });
                 return query.ToArray();

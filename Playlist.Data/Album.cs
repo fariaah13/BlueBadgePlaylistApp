@@ -11,7 +11,9 @@ namespace Playlist.Data
     {
         [Key]
         public int AlbumID { get; set; }
+        [Required]
         public string AlbumName { get; set; }
-        public int AlbumArt { get; set; } //obviously not an int but idk what it should be
+        [Required]
+        public string AlbumArt { get; set; } 
     }
 }
