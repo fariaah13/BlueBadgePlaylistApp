@@ -12,7 +12,7 @@ namespace Playlist.Services
 {
     public class ArtistService
     {
-        //CreateArtist
+        //CreatePlaylist
         public bool CreateArtist(ArtistCreate model)
         {
             var artist = new Artist()

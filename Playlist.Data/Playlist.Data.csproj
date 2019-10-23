@@ -65,6 +65,14 @@
     <Compile Include="Migrations\201910102239550_added-AlbumName-AlbumArt.Designer.cs">
       <DependentUpon>201910102239550_added-AlbumName-AlbumArt.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201910110106302_song-class.cs" />
+    <Compile Include="Migrations\201910110106302_song-class.Designer.cs">
+      <DependentUpon>201910110106302_song-class.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910232315590_PlaylistData.cs" />
+    <Compile Include="Migrations\201910232315590_PlaylistData.Designer.cs">
+      <DependentUpon>201910232315590_PlaylistData.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="NewPlaylist.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -81,6 +89,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201910102239550_added-AlbumName-AlbumArt.resx">
       <DependentUpon>201910102239550_added-AlbumName-AlbumArt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910110106302_song-class.resx">
+      <DependentUpon>201910110106302_song-class.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910232315590_PlaylistData.resx">
+      <DependentUpon>201910232315590_PlaylistData.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

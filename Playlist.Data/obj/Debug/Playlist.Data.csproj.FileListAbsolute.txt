@@ -17,3 +17,5 @@ C:\Users\Faria\Desktop\DotNetProjects\BlueBadge\Playlist\Playlist.Data\obj\Debug
 C:\Users\Faria\Desktop\DotNetProjects\BlueBadge\Playlist\Playlist.Data\obj\Debug\Playlist.Data.Migrations.InitialCreate.resources
 C:\Users\Faria\Desktop\DotNetProjects\BlueBadge\Playlist\Playlist.Data\obj\Debug\Playlist.Data.csproj.GenerateResource.cache
 C:\Users\Faria\Desktop\DotNetProjects\BlueBadge\Playlist\Playlist.Data\obj\Debug\Playlist.Data.Migrations.addedAlbumNameAlbumArt.resources
+C:\Users\Faria\Desktop\DotNetProjects\BlueBadge\Playlist\Playlist.Data\obj\Debug\Playlist.Data.Migrations.songclass.resources
+C:\Users\Faria\Desktop\DotNetProjects\BlueBadge\Playlist\Playlist.Data\obj\Debug\Playlist.Data.Migrations.PlaylistData.resources

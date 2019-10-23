@@ -12,6 +12,5 @@ namespace Playlist.Data
         [Key]
         public int NewPlaylistID { get; set; }
         public string PlaylistName { get; set; }
-        public Guid OwnerID { get; set; }
     }
 }
