@@ -114,7 +114,7 @@ namespace PlaylistApp.Controllers
         {
             var service = new ArtistService();
             service.DeleteArtist(id);
-            TempData["SaveResult"] = "Artist was deleted";
+            TempData["SaveResult"] = "Artist has been deleted";
             return RedirectToAction("Index");
         }
     }
