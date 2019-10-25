@@ -21,6 +21,11 @@ namespace PlaylistApp.Controllers
         //GET /Create
         public ActionResult Create()
         {
+            var artist = new ArtistService();
+            ViewBag.ArtistID = new SelectList(artist.GetAllArtists().ToList(), "ArtistID", "Name");
+
+            var album = new AlbumService();
+            ViewBag.AlbumID = new SelectList(album.GetAllAlbums().ToList(), "AlbumID", "AlbumName");
             return View();
         }
 
@@ -46,7 +51,7 @@ namespace PlaylistApp.Controllers
             return View(model);
         }
         //GET /Detail
-        public ActionResult Detail(int id)
+        public ActionResult Details(int id)
         {
             var svc = new SongService();
             var model = svc.GetSongByID(id);
@@ -93,7 +98,7 @@ namespace PlaylistApp.Controllers
             return View();
         }
         //GET /Delete
-        public ActionResult Delete (int id)
+        public ActionResult Delete(int id)
         {
             var svc = new SongService();
             var model = svc.GetSongByID(id);

@@ -43,14 +43,14 @@ namespace PlaylistApp.Controllers
             ModelState.AddModelError("", "Playlist was not added");
             return View(model);
         }
-        ////GET Playlist/Detail
-        //public ActionResult Details (int id)
-        //{
-        //    var svc = new PlaylistService();
-        //    var model = svc.GetPlaylistByID(id);
+        //GET Playlist/Detail
+        public ActionResult Details(int id)
+        {
+            var svc = new PlaylistService();
+            var model = svc.GetPlaylistByID(id);
 
-        //    return View(model);
-        //}
+            return View(model);
+        }
         //GET Playlist/Edit
         public ActionResult Edit(int id)
         {

@@ -73,6 +73,10 @@
     <Compile Include="Migrations\201910232315590_PlaylistData.Designer.cs">
       <DependentUpon>201910232315590_PlaylistData.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201910242250430_added-viewbag-for-songcontroller.cs" />
+    <Compile Include="Migrations\201910242250430_added-viewbag-for-songcontroller.Designer.cs">
+      <DependentUpon>201910242250430_added-viewbag-for-songcontroller.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="NewPlaylist.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -95,6 +99,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201910232315590_PlaylistData.resx">
       <DependentUpon>201910232315590_PlaylistData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910242250430_added-viewbag-for-songcontroller.resx">
+      <DependentUpon>201910242250430_added-viewbag-for-songcontroller.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

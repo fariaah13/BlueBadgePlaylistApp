@@ -16,9 +16,11 @@ namespace Playlist.Data
         public string Title { get; set; }
         public string Genre { get; set; }
         [ForeignKey("Artist")]
+        [Display (Name = "Artist")]
         public int ArtistID { get; set; }
         public virtual Artist Artist { get; set; }
         [ForeignKey("Album")]
+        [Display (Name = "Album")]
         public int AlbumID { get; set; }
         public virtual Album Album { get; set; }
         public int Runtime { get; set; }

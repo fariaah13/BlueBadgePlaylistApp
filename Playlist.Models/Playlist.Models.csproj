@@ -55,6 +55,10 @@
     <Compile Include="Playlist\PlaylistDetail.cs" />
     <Compile Include="Playlist\PlaylistListItems.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SongPlaylist\SongPlaylistCreate.cs" />
+    <Compile Include="SongPlaylist\SongPlaylistDetail.cs" />
+    <Compile Include="SongPlaylist\SongPlaylistEdit.cs" />
+    <Compile Include="SongPlaylist\SongPlaylistListItem.cs" />
     <Compile Include="Song\SongCreate.cs" />
     <Compile Include="Song\SongDetail.cs" />
     <Compile Include="Song\SongEdit.cs" />
