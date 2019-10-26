@@ -33,11 +33,15 @@ namespace Playlist.Services
             {
                 var query = ctx.PlaylistOfSongs
                     .Select(songs =>
+                    
                     new SongPlaylistListItem
                     {
                         SongPlaylistID = songs.SongPlaylistID,
                         NewPlaylistID = songs.NewPlaylistID,
+                        PlaylistName = songs.NewPlaylist.PlaylistName,
+                        SongName = songs.Song.Title,
                         SongID = songs.SongID,
+                        
                     });
                 return query.ToArray();
             }
@@ -57,12 +61,12 @@ namespace Playlist.Services
             }
         }
         //DeleteSongPlaylist
-        public bool DeleteSongPlaylist(int songplaylistID)
+        public bool DeleteSongFromPlaylist(int songID)
         {
-            using (var ctx = new ApplicationDbContext)
+            using (var ctx = new ApplicationDbContext())
             {
                 var song = ctx.PlaylistOfSongs
-                    .Single(s => s.SongPlaylistID == songplaylistID);
+                    .Single(s => s.SongID == songID);
 
                 ctx.PlaylistOfSongs.Remove(song);
 

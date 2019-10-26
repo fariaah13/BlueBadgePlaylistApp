@@ -7,8 +7,11 @@
 <h2>Details</h2>
 
 <div>
-    <h4>PlaylistDetail</h4>
+    <h4>Details</h4>
     <hr />
+    <p>
+    @Html.ActionLink("Add Song", "Create", "SongPlaylist", new { NewPlaylistID = Model.NewPlaylistID }, null)
+    </p>
     <dl class="dl-horizontal">
 
         <dt>
@@ -21,7 +24,37 @@
 
     </dl>
 </div>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Songs.FirstOrDefault().Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model.Songs)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ArtistName)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.SongID }) |
+                @Html.ActionLink("Details", "Details", new { id = item.SongID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.SongID })
+            </td>
+        </tr>
+    }
+
+</table>
+
 <p>
-    @Html.ActionLink("Edit", "Edit", new {id = Model.NewPlaylistID}) |
+    @Html.ActionLink("Edit", "Edit", new { id = Model.NewPlaylistID }) |
     @Html.ActionLink("Back to List", "Index")
 </p>

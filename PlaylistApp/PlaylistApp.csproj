@@ -184,6 +184,7 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\headphones.jpg" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -259,10 +260,12 @@
     <Content Include="Views\Song\Edit.cshtml" />
     <Content Include="Views\Song\Delete.cshtml" />
     <Content Include="Views\Song\Create.cshtml" />
+    <Content Include="Views\SongPlaylist\Index.cshtml" />
+    <Content Include="Views\SongPlaylist\Create.cshtml" />
+    <Content Include="Views\SongPlaylist\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\SongPlaylist\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

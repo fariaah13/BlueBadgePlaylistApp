@@ -23,7 +23,9 @@ namespace Playlist.Services
                         SongID = songs.SongID,
                         Title = songs.Title,
                         ArtistID = songs.ArtistID,
-                        AlbumID = songs.AlbumID
+                        ArtistName = songs.Artist.Name,
+                        AlbumID = songs.AlbumID,
+                        AlbumName = songs.Album.AlbumName
                     });
                 return query.ToArray();
             }

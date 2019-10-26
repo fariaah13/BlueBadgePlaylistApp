@@ -11,6 +11,7 @@ namespace Playlist.Models.Artist
     {
         [Required]
         public string Name { get; set; }
+        [Display (Name = "Band")]
         public bool IsBand { get; set; }
         [Required]
         [Display(Name = "Country")]

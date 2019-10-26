@@ -1,5 +1,7 @@
 ﻿using Playlist.Data;
 using Playlist.Models.Playlist;
+using Playlist.Models.Song;
+using Playlist.Models.SongPlaylist;
 using PlaylistApp.Data;
 using System;
 using System.Collections.Generic;
@@ -51,10 +53,23 @@ namespace Playlist.Services
                 var playlist = ctx.Playlists
                     .Single(e => e.NewPlaylistID == id);
 
+                var songs = ctx.PlaylistOfSongs
+                    .Where(s => s.NewPlaylistID == id)
+                    .Select(s =>
+                    new SongListItem
+                    {
+                        SongID = s.SongID,
+                        Title = s.Song.Title,
+                        ArtistID = s.Song.ArtistID,
+                        ArtistName = s.Song.Artist.Name,
+                        AlbumID = s.Song.AlbumID
+                    }).ToList();
+
                 return new PlaylistDetail
                 {
                     NewPlaylistID = playlist.NewPlaylistID,
-                    Name = playlist.PlaylistName
+                    Name = playlist.PlaylistName,
+                    Songs = songs
                 };
             }
         }

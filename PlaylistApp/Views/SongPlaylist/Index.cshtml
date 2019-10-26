@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Playlist.Models.SongPlaylist.SongPlaylistListItem>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Add Songs to Playlist", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NewPlaylistID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SongID)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.PlaylistName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SongName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.SongPlaylistID }) |
+            @Html.ActionLink("Details", "Details", new {id=item.SongPlaylistID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.SongPlaylistID})
+        </td>
+    </tr>
+}
+
+</table>

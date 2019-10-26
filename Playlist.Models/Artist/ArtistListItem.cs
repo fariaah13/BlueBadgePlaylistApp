@@ -11,8 +11,9 @@ namespace Playlist.Models
     {
         public int ArtistID { get; set; }
         public string Name { get; set; }
+        [Display (Name = "Band")]
         public bool IsBand { get; set; }
-        [Display(Name = "Country")]
+        [Display(Name = "Country of Origin")]
         public string CountryOfOrigin { get; set; }
     }
 }

@@ -22,3 +22,14 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.jumbotron {
+ background-image: url('../Assets/headphones.jpg');
+ background-size: cover;
+ padding-top: 50px;
+ padding-bottom: 50px;
+ height: 400px !important;
+ display: block;
+ color: black;
+ background-repeat:  no-repeat;
+}
