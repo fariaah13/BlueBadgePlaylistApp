@@ -1,6 +1,11 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color: #404040;
+}
+
+navbar-header {
+    background-color: #141A16;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -24,12 +29,20 @@ textarea {
 }
 
 .jumbotron {
- background-image: url('../Assets/headphones.jpg');
- background-size: cover;
- padding-top: 50px;
- padding-bottom: 50px;
- height: 400px !important;
- display: block;
- color: black;
- background-repeat:  no-repeat;
+    background-image: url('../Assets/redheadphones.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 250px;
+    display: block;
+    background-repeat: no-repeat;
 }
+tr:nth-child(odd) {
+    background-color: #77CC66;
+}
+tr:nth-child(even) {
+    background-color: #95FF80;
+}
+
+

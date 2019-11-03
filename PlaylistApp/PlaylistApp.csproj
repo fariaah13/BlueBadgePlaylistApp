@@ -185,6 +185,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\headphones.jpg" />
+    <Content Include="Assets\pinkblue-headphones.jpg" />
+    <Content Include="Assets\redheadphones.jpg" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
