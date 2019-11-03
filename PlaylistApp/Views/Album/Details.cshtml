@@ -4,39 +4,38 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+<h2 style="color: #77CC66">Album Details</h2>
 
 <div>
-    <h4>Details</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.AlbumID)
+            @Html.HiddenFor(model => model.AlbumID)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.AlbumID)
+            @Html.HiddenFor(model => model.AlbumID)
         </dd>
 
-        <dt>
+        <dt style="color: #77CC66">
             @Html.DisplayNameFor(model => model.AlbumName)
         </dt>
 
-        <dd>
+        <dd style="color: floralwhite">
             @Html.DisplayFor(model => model.AlbumName)
         </dd>
 
-        <dt>
+        <dt style="color: #77CC66">
             @Html.DisplayNameFor(model => model.AlbumArt)
         </dt>
 
-        <dd>
+        <dd style="color: floralwhite">
             @Html.DisplayFor(model => model.AlbumArt)
         </dd>
 
     </dl>
 </div>
-<p>
+<p style="font-size: 18px;">
     @Html.ActionLink("Edit", "Edit", new {id = Model.AlbumID}) |
     @Html.ActionLink("Back to List", "Index")
 </p>

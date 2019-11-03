@@ -4,26 +4,25 @@
     ViewBag.Title = "Delete Album";
 }
 
-<h2>Delete Album</h2>
+<h2 style="color: #77CC66">Delete Album</h2>
 
-<h3>Are you sure you want to delete this?</h3>
+<h3 style="color: floralwhite">Are you sure you want to delete this album?</h3>
 <div>
-    <h4>Delete</h4>
     <hr />
     <dl class="dl-horizontal">
-        <dt>
+        <dt style="color: #77CC66">
             @Html.DisplayNameFor(model => model.AlbumName)
         </dt>
 
-        <dd>
+        <dd style="color: floralwhite">
             @Html.DisplayFor(model => model.AlbumName)
         </dd>
 
-        <dt>
+        <dt style="color: #77CC66">
             @Html.DisplayNameFor(model => model.AlbumArt)
         </dt>
 
-        <dd>
+        <dd style="color: floralwhite">
             @Html.DisplayFor(model => model.AlbumArt)
         </dd>
 
@@ -32,7 +31,7 @@
     @using (Html.BeginForm()) {
         @Html.AntiForgeryToken()
 
-        <div class="form-actions no-color">
+        <div class="form-actions no-color" style="font-size: 18px;">
             <input type="submit" value="Delete" class="btn btn-default" /> |
             @Html.ActionLink("Back to List", "Index")
         </div>
